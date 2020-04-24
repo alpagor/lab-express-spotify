@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Artists</title>
+</head>
+
+<body>
+    <div="container">
+        <div="row">
+            {{#each artists}}
+            <img src="{{this.images.0.url}}" alt="artist picture">
+            <p>{{name}}</p>
+            <a href="/albums/{{id}}">View Albums</a>
+            {{/each}}
+            </div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks</title>
+</head>
+
+<body>
+    <div>
+        {{#each tracks}}
+        <p>{{name}}</p>
+        <audio controls name="media">
+            <source src="{{preview_url}}" type="audio/mp3" />
+        </audio>
+        {{/each}}
+</body>
+
+</html>
